@@ -26,7 +26,7 @@ public class DireccionServiceImplTest {
 	DireccionService direccionService;
 
 	
-	@Ignore
+	@Test
 	public void pruebaConsultarTodo(){
 		try {
 			List<Direccion> lista = direccionService.obtenerDirecciones();
@@ -84,7 +84,7 @@ public class DireccionServiceImplTest {
 
 	}
 	
-	@Test
+	@Ignore
 	public void nuevoRegistro() {
 		Direccion direccion = new Direccion();
 		System.out.println("Test nuevo registro");
