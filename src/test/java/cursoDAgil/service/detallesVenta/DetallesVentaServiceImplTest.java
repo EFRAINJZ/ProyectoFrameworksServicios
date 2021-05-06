@@ -25,7 +25,7 @@ public class DetallesVentaServiceImplTest {
 	DetallesVentaService detallesVentaService;
 	
 	
-	@Ignore
+	@Test
 	public void pruebaConsultarTodo(){
 		int reg;
 		System.out.println("Test para consultar los detalles ventas");
@@ -39,7 +39,7 @@ public class DetallesVentaServiceImplTest {
 			System.out.println("error: "+ex);
 		}
 	}
-	@Ignore
+	@Test
 	public void pruebaNuevoDetallesVenta(){
 		DetallesVenta detallesVenta=new DetallesVenta();
 		System.out.println("Test nuevo detalles venta");
