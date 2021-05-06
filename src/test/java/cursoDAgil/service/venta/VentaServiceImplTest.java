@@ -20,11 +20,15 @@ import cursoDAgil.bd.domain.Cliente;
 import cursoDAgil.bd.domain.Direccion;
 import cursoDAgil.bd.domain.Productos;
 import cursoDAgil.bd.domain.Venta;
+import cursoDAgil.dao.cliente.ClienteDao;
+import cursoDAgil.service.cliente.ClienteService;
 import cursoDAgil.service.producto.ProductoService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"/applicationContext.xml"})
 public class VentaServiceImplTest {
+	@Inject
+	ClienteService clienteService;
    @Inject
    VentaService ventaService;
    @Inject
@@ -125,8 +129,7 @@ public class VentaServiceImplTest {
 	}
 	
    
-   /*
-    *
+   
     
 	
 	@Test
@@ -169,5 +172,5 @@ public class VentaServiceImplTest {
 		
 	}
 
-    */
+    
 }
