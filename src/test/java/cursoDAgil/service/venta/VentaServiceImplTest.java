@@ -27,8 +27,8 @@ import cursoDAgil.service.producto.ProductoService;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"/applicationContext.xml"})
 public class VentaServiceImplTest {
-	@Inject
-	ClienteService clienteService;
+   @Inject
+   ClienteService clienteService;
    @Inject
    VentaService ventaService;
    @Inject
@@ -132,7 +132,7 @@ public class VentaServiceImplTest {
    
     
 	
-	@Test
+	@Ignore
 	public void pruebaNuevaVenta(){
 		Venta nuevaVenta = new Venta();
 		List<Productos> carrito = new ArrayList<Productos>();
