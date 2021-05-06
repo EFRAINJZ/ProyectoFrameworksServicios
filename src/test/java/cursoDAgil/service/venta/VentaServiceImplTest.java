@@ -20,13 +20,15 @@ import cursoDAgil.bd.domain.Cliente;
 import cursoDAgil.bd.domain.Direccion;
 import cursoDAgil.bd.domain.Productos;
 import cursoDAgil.bd.domain.Venta;
+import cursoDAgil.service.producto.ProductoService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"/applicationContext.xml"})
 public class VentaServiceImplTest {
    @Inject
    VentaService ventaService;
-   
+   @Inject
+   ProductoService productoService;
    @Ignore
 	public void pruebaObtenerVentas(){
 		int reg;
