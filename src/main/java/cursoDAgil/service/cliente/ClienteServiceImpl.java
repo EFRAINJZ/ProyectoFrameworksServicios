@@ -26,6 +26,11 @@ public class ClienteServiceImpl implements ClienteService, Serializable {
 		return clienteDao.listarTodosClientes();
 	}
 	public Integer agregarCliente(Cliente cliente) {
+		System.out.println("Servicios");
+		System.out.println(cliente.getNombre());
+		System.out.println(cliente.getApellido());
+		System.out.println(cliente.getEmail());
+		System.out.println(cliente.getDireccion().getIdDireccion());
 		return clienteDao.agregarCliente(cliente);
 	}
 	public Cliente obtenerClientePorId(Map<String,Integer>mapCliente) {
